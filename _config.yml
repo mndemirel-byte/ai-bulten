@@ -1,0 +1,19 @@
+title: Günlük Yapay Zeka Bülteni
+description: Son 24 saatin en önemli 10 yapay zeka haberi — her sabah, Türkçe.
+lang: tr
+timezone: Europe/Istanbul
+url: "https://mndemirel-byte.github.io"
+baseurl: "/ai-bulten"
+permalink: /:year/:month/:day/
+theme: minima
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
+header_pages:
+  - arsiv.md
+  - hakkinda.md
+aylar: [Ocak, Şubat, Mart, Nisan, Mayıs, Haziran, Temmuz, Ağustos, Eylül, Ekim, Kasım, Aralık]
+exclude:
+  - .secrets
+  - README.md
