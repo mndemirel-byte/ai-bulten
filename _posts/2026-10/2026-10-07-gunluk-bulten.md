@@ -4,8 +4,8 @@ title: "Günlük Yapay Zeka Bülteni — 7 Ekim 2026"
 date: 2026-10-07 09:00:00 +0300
 ---
 
-> Kapsam: 6–7 Ekim 2026 (son ~24 saat) · Güncelleme: 7 Ekim 2026 akşam, İstanbul saati
-> Kaynak türleri: uluslararası teknoloji basını ve resmi şirket blogları
+> Kapsam: 6–7 Ekim 2026 (son ~24 saat) · Güncelleme: 7 Ekim 2026 akşam, İstanbul saati<br>
+> Kaynak türleri: uluslararası teknoloji basını ve resmi şirket blogları<br>
 > Yöntem: Yerleşik tarayıcı (The Verge, OpenAI, Axios) + web araması ve sayfa okuma. ✅ = birincil kaynakta okunarak doğrulandı.
 
 ---
