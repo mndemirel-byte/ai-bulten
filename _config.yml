@@ -15,5 +15,5 @@ header_pages:
   - hakkinda.md
 aylar: [Ocak, Şubat, Mart, Nisan, Mayıs, Haziran, Temmuz, Ağustos, Eylül, Ekim, Kasım, Aralık]
 exclude:
-  - .secrets
+  - .env
   - README.md
