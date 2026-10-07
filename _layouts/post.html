@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="post h-entry">
+  <header class="post-header">
+    <p class="post-meta"><a href="{{ '/' | relative_url }}">← Tüm bültenler</a></p>
+    <h1 class="post-title p-name">{{ page.title | escape }}</h1>
+  </header>
+  <div class="post-content e-content">
+    {{ content }}
+  </div>
+  <nav class="bulten-nav">
+    {% if page.previous %}<a class="onceki" href="{{ page.previous.url | relative_url }}">← {% include tarih.html date=page.previous.date %}</a>{% else %}<span></span>{% endif %}
+    <a class="tumu" href="{{ '/' | relative_url }}">Tüm bültenler</a>
+    {% if page.next %}<a class="sonraki" href="{{ page.next.url | relative_url }}">{% include tarih.html date=page.next.date %} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+</article>

@@ -1,0 +1,26 @@
+---
+---
+@import "minima";
+
+.son-kart { border: 1px solid #d8dee9; border-left: 4px solid #1f4e8c; border-radius: 8px; padding: 20px 24px; margin: 8px 0 32px; background: #f7f9fc; }
+.son-etiket { color: #1f4e8c; font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+.son-baslik { font-size: 26px; margin-bottom: 12px; }
+.son-baslik a { color: inherit; }
+.son-liste { margin-bottom: 16px; }
+.son-liste li { margin-bottom: 4px; }
+.son-buton { display: inline-block; background: #1f4e8c; color: #fff !important; padding: 8px 16px; border-radius: 6px; text-decoration: none !important; font-weight: 600; }
+.son-buton:hover { background: #163a69; }
+.gecmis-baslik { margin-top: 8px; }
+details.ay { border-bottom: 1px solid #e6e9ef; padding: 10px 0; }
+details.ay summary { cursor: pointer; font-weight: 600; font-size: 18px; }
+details.ay .adet { color: #828282; font-weight: 400; font-size: 14px; margin-left: 8px; }
+.gun-liste { list-style: none; margin: 10px 0 0; }
+.gun-liste li { padding: 8px 0; border-top: 1px solid #f0f2f5; }
+.gun-liste a { display: flex; gap: 14px; text-decoration: none; }
+.gun-liste a:hover .ozet { text-decoration: underline; }
+.gun-liste .gun { flex: 0 0 72px; font-weight: 600; color: #1f4e8c; }
+.gun-liste .ozet { color: #333; }
+.bos, .rss { color: #828282; font-size: 14px; }
+.rss { margin-top: 24px; }
+.bulten-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 40px; padding-top: 16px; border-top: 1px solid #e6e9ef; font-weight: 600; }
+@media (max-width: 600px) { .gun-liste a { flex-direction: column; gap: 2px; } .gun-liste .gun { flex: none; } .bulten-nav { flex-wrap: wrap; } }

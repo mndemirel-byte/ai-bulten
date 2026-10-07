@@ -2,6 +2,10 @@
 layout: post
 title: "Günlük Yapay Zeka Bülteni — 7 Ekim 2026"
 date: 2026-10-07 09:00:00 +0300
+one_cikanlar:
+  - "GPT-6 tüm ChatGPT kullanıcılarına açıldı"
+  - "Mistral Large 4: 1 trilyon parametreli açık model"
+  - "Copilot CLI'da şifreli prompt injection açığı"
 ---
 
 > Kapsam: 6–7 Ekim 2026 (son ~24 saat) · Güncelleme: 7 Ekim 2026 akşam, İstanbul saati<br>
