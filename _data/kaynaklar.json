@@ -1,0 +1,38 @@
+{
+  "_aciklama": "scripts/topla.py bu listeyi okur. tur: resmi (şirket blogu) | basin (teknoloji/iş basını) | kesif (yalnızca haber keşfi; bültende kaynak olarak kullanılmaz). bicim: rss | sayfa. anahtar_filtre: true ise genel akış, yalnızca yapay zeka anahtar kelimesi geçen maddeler alınır. disla: başlığı bu düzenli ifadeyle eşleşen maddeler atılır. oncelik: 1 en yüksek. Erişilemeyen kaynakları silmek yerine aktif:false yapın ve not yazın.",
+  "kaynaklar": [
+    {"id": "openai", "ad": "OpenAI", "tur": "resmi", "bicim": "rss", "url": "https://openai.com/news/rss.xml", "oncelik": 1, "aktif": true, "disla": "\\bwith (OpenAI|ChatGPT|Codex)( and Codex)?$", "not": "disla: müşteri hikâyeleri ('X does Y with OpenAI')."},
+    {"id": "anthropic", "ad": "Anthropic", "tur": "resmi", "bicim": "sayfa", "url": "https://www.anthropic.com/news", "taban": "https://www.anthropic.com", "desen": "href=\"(/news/[^\"#?]+)\"", "oncelik": 1, "aktif": true, "not": "RSS yok; haber sayfasındaki bağlantılar taranır, tarih ilk görülme anıdır."},
+    {"id": "googleblog", "ad": "Google", "tur": "resmi", "bicim": "rss", "url": "https://blog.google/technology/ai/rss/", "oncelik": 1, "aktif": true},
+    {"id": "deepmind", "ad": "Google DeepMind", "tur": "resmi", "bicim": "rss", "url": "https://deepmind.google/blog/rss.xml", "oncelik": 1, "aktif": true},
+    {"id": "meta_ai", "ad": "Meta AI", "tur": "resmi", "bicim": "sayfa", "url": "https://ai.meta.com/blog/", "taban": "https://ai.meta.com", "desen": "href=\"(https://ai\\.meta\\.com/blog/[^\"#?]+/)\"", "oncelik": 1, "aktif": true, "not": "RSS yok; blog sayfasındaki bağlantılar taranır."},
+    {"id": "meta_newsroom", "ad": "Meta Newsroom", "tur": "resmi", "bicim": "rss", "url": "https://about.fb.com/news/feed/", "oncelik": 2, "aktif": true, "anahtar_filtre": true},
+    {"id": "mistral", "ad": "Mistral AI", "tur": "resmi", "bicim": "rss", "url": "https://mistral.ai/news/rss", "oncelik": 1, "aktif": true},
+    {"id": "microsoft", "ad": "Microsoft", "tur": "resmi", "bicim": "rss", "url": "https://blogs.microsoft.com/feed/", "oncelik": 2, "aktif": true, "anahtar_filtre": true},
+    {"id": "nvidia", "ad": "NVIDIA", "tur": "resmi", "bicim": "rss", "url": "https://blogs.nvidia.com/feed/", "oncelik": 2, "aktif": true, "disla": "GeForce NOW|Into the Omniverse|Game Ready|DLSS|\\bRTX\\b", "not": "disla: oyun/sürücü duyuruları."},
+    {"id": "huggingface", "ad": "Hugging Face", "tur": "resmi", "bicim": "rss", "url": "https://huggingface.co/blog/feed.xml", "oncelik": 3, "aktif": true},
+    {"id": "aws_ml", "ad": "AWS Machine Learning Blog", "tur": "resmi", "bicim": "rss", "url": "https://aws.amazon.com/blogs/machine-learning/feed/", "oncelik": 3, "aktif": false, "not": "Çoğunlukla ürün eğitimi; gürültü yüksek."},
+
+    {"id": "techcrunch", "ad": "TechCrunch", "tur": "basin", "bicim": "rss", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "oncelik": 1, "aktif": true},
+    {"id": "verge", "ad": "The Verge", "tur": "basin", "bicim": "rss", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "oncelik": 1, "aktif": true},
+    {"id": "ars", "ad": "Ars Technica", "tur": "basin", "bicim": "rss", "url": "https://arstechnica.com/ai/feed/", "oncelik": 1, "aktif": true},
+    {"id": "axios", "ad": "Axios", "tur": "basin", "bicim": "rss", "url": "https://api.axios.com/feed/", "oncelik": 1, "aktif": true, "anahtar_filtre": true, "not": "Genel akış; makale sayfaları bot korumalı, metin okunamaz."},
+    {"id": "cnbc", "ad": "CNBC", "tur": "basin", "bicim": "rss", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910", "oncelik": 1, "aktif": true, "anahtar_filtre": true, "not": "Teknoloji akışı; makale sayfaları bot korumalı."},
+    {"id": "bloomberg", "ad": "Bloomberg", "tur": "basin", "bicim": "rss", "url": "https://feeds.bloomberg.com/technology/news.rss", "oncelik": 1, "aktif": true, "anahtar_filtre": true, "not": "Makaleler paywall; yalnızca başlık ve özet."},
+    {"id": "wsj", "ad": "WSJ", "tur": "basin", "bicim": "rss", "url": "https://feeds.content.dowjones.io/public/rss/RSSWSJD", "oncelik": 1, "aktif": true, "anahtar_filtre": true, "not": "Paywall; yalnızca başlık ve özet."},
+    {"id": "ft", "ad": "Financial Times", "tur": "basin", "bicim": "rss", "url": "https://www.ft.com/technology?format=rss", "oncelik": 1, "aktif": true, "anahtar_filtre": true, "not": "Paywall; yalnızca başlık ve özet."},
+    {"id": "theinformation", "ad": "The Information", "tur": "basin", "bicim": "rss", "url": "https://www.theinformation.com/feed?topic=ai", "oncelik": 1, "aktif": true, "not": "Paywall; yalnızca başlık ve özet."},
+    {"id": "venturebeat", "ad": "VentureBeat", "tur": "basin", "bicim": "rss", "url": "https://venturebeat.com/category/ai/feed/", "oncelik": 2, "aktif": true, "not": "Akış zaman zaman 429 veriyor; bir kez yeniden denenir."},
+    {"id": "wired", "ad": "Wired", "tur": "basin", "bicim": "rss", "url": "https://www.wired.com/feed/tag/ai/latest/rss", "oncelik": 2, "aktif": true},
+    {"id": "mittr", "ad": "MIT Technology Review", "tur": "basin", "bicim": "rss", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed", "oncelik": 2, "aktif": true},
+    {"id": "nyt", "ad": "The New York Times", "tur": "basin", "bicim": "rss", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml", "oncelik": 2, "aktif": true, "anahtar_filtre": true},
+    {"id": "guardian", "ad": "The Guardian", "tur": "basin", "bicim": "rss", "url": "https://www.theguardian.com/technology/artificialintelligenceai/rss", "oncelik": 2, "aktif": true},
+    {"id": "bbc", "ad": "BBC", "tur": "basin", "bicim": "rss", "url": "https://feeds.bbci.co.uk/news/technology/rss.xml", "oncelik": 2, "aktif": true, "anahtar_filtre": true},
+    {"id": "semafor", "ad": "Semafor", "tur": "basin", "bicim": "rss", "url": "https://www.semafor.com/rss.xml", "oncelik": 2, "aktif": true, "anahtar_filtre": true},
+    {"id": "theregister", "ad": "The Register", "tur": "basin", "bicim": "rss", "url": "https://www.theregister.com/software/ai_ml/headlines.atom", "oncelik": 3, "aktif": true},
+    {"id": "404media", "ad": "404 Media", "tur": "basin", "bicim": "rss", "url": "https://www.404media.co/rss/", "oncelik": 3, "aktif": true, "anahtar_filtre": true},
+    {"id": "reuters", "ad": "Reuters", "tur": "basin", "bicim": "rss", "url": "https://www.reuters.com/technology/artificial-intelligence/rss", "oncelik": 1, "aktif": false, "not": "Herkese açık akış yok (401). Haberleri yalnızca diğer yayıncıların aktarımıyla alınır."},
+
+    {"id": "aiweekly", "ad": "AI Weekly", "tur": "kesif", "bicim": "rss", "url": "https://aiweekly.co/feed", "oncelik": 3, "aktif": true, "not": "Yalnızca keşif; bültende kaynak olarak kullanılmaz, orijinal yayıncıya bağlanır."}
+  ]
+}

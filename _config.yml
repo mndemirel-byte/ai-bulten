@@ -17,3 +17,6 @@ aylar: [Ocak, Şubat, Mart, Nisan, Mayıs, Haziran, Temmuz, Ağustos, Eylül, Ek
 exclude:
   - .env
   - README.md
+  - docs
+  - scripts
+  - _calisma
