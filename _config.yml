@@ -5,6 +5,7 @@ timezone: Europe/Istanbul
 url: "https://mndemirel-byte.github.io"
 baseurl: "/ai-bulten"
 permalink: /:year/:month/:day/
+future: true
 theme: minima
 plugins:
   - jekyll-feed
