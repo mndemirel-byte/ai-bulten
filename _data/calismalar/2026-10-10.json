@@ -1,0 +1,254 @@
+{
+ "tarih": "2026-10-10",
+ "zaman": "2026-10-10T08:40:34+03:00",
+ "pencere_saat": 36,
+ "kaynaklar": [
+  {
+   "id": "openai",
+   "durum": 200,
+   "sure_sn": 0.6,
+   "hata": null,
+   "madde": 1287,
+   "ad": "OpenAI"
+  },
+  {
+   "id": "anthropic",
+   "durum": 200,
+   "sure_sn": 0.4,
+   "hata": null,
+   "madde": 10,
+   "ad": "Anthropic"
+  },
+  {
+   "id": "googleblog",
+   "durum": 200,
+   "sure_sn": 1.0,
+   "hata": null,
+   "madde": 20,
+   "ad": "Google"
+  },
+  {
+   "id": "deepmind",
+   "durum": 200,
+   "sure_sn": 0.5,
+   "hata": null,
+   "madde": 100,
+   "ad": "Google DeepMind"
+  },
+  {
+   "id": "meta_ai",
+   "durum": 200,
+   "sure_sn": 1.8,
+   "hata": null,
+   "madde": 10,
+   "ad": "Meta AI"
+  },
+  {
+   "id": "meta_newsroom",
+   "durum": 200,
+   "sure_sn": 1.4,
+   "hata": null,
+   "madde": 10,
+   "ad": "Meta Newsroom"
+  },
+  {
+   "id": "mistral",
+   "durum": 200,
+   "sure_sn": 0.4,
+   "hata": null,
+   "madde": 89,
+   "ad": "Mistral AI"
+  },
+  {
+   "id": "microsoft",
+   "durum": 200,
+   "sure_sn": 0.7,
+   "hata": null,
+   "madde": 10,
+   "ad": "Microsoft"
+  },
+  {
+   "id": "nvidia",
+   "durum": 200,
+   "sure_sn": 0.4,
+   "hata": null,
+   "madde": 18,
+   "ad": "NVIDIA"
+  },
+  {
+   "id": "huggingface",
+   "durum": 200,
+   "sure_sn": 0.2,
+   "hata": null,
+   "madde": 876,
+   "ad": "Hugging Face"
+  },
+  {
+   "id": "techcrunch",
+   "durum": 200,
+   "sure_sn": 0.2,
+   "hata": null,
+   "madde": 20,
+   "ad": "TechCrunch"
+  },
+  {
+   "id": "verge",
+   "durum": 200,
+   "sure_sn": 0.2,
+   "hata": null,
+   "madde": 10,
+   "ad": "The Verge"
+  },
+  {
+   "id": "ars",
+   "durum": 200,
+   "sure_sn": 0.3,
+   "hata": null,
+   "madde": 20,
+   "ad": "Ars Technica"
+  },
+  {
+   "id": "axios",
+   "durum": 200,
+   "sure_sn": 0.3,
+   "hata": null,
+   "madde": 100,
+   "ad": "Axios"
+  },
+  {
+   "id": "cnbc",
+   "durum": 200,
+   "sure_sn": 0.4,
+   "hata": null,
+   "madde": 30,
+   "ad": "CNBC"
+  },
+  {
+   "id": "bloomberg",
+   "durum": 200,
+   "sure_sn": 0.7,
+   "hata": null,
+   "madde": 20,
+   "ad": "Bloomberg"
+  },
+  {
+   "id": "wsj",
+   "durum": 200,
+   "sure_sn": 0.2,
+   "hata": null,
+   "madde": 40,
+   "ad": "WSJ"
+  },
+  {
+   "id": "ft",
+   "durum": 200,
+   "sure_sn": 0.4,
+   "hata": null,
+   "madde": 25,
+   "ad": "Financial Times"
+  },
+  {
+   "id": "theinformation",
+   "durum": 200,
+   "sure_sn": 0.2,
+   "hata": null,
+   "madde": 20,
+   "ad": "The Information"
+  },
+  {
+   "id": "venturebeat",
+   "durum": 429,
+   "sure_sn": 3.4,
+   "hata": "HTTP 429",
+   "madde": 0,
+   "ad": "VentureBeat"
+  },
+  {
+   "id": "wired",
+   "durum": 200,
+   "sure_sn": 0.2,
+   "hata": null,
+   "madde": 10,
+   "ad": "Wired"
+  },
+  {
+   "id": "mittr",
+   "durum": 200,
+   "sure_sn": 0.2,
+   "hata": null,
+   "madde": 10,
+   "ad": "MIT Technology Review"
+  },
+  {
+   "id": "nyt",
+   "durum": 200,
+   "sure_sn": 0.3,
+   "hata": null,
+   "madde": 21,
+   "ad": "The New York Times"
+  },
+  {
+   "id": "guardian",
+   "durum": 200,
+   "sure_sn": 0.5,
+   "hata": null,
+   "madde": 20,
+   "ad": "The Guardian"
+  },
+  {
+   "id": "bbc",
+   "durum": 200,
+   "sure_sn": 0.3,
+   "hata": null,
+   "madde": 21,
+   "ad": "BBC"
+  },
+  {
+   "id": "semafor",
+   "durum": 200,
+   "sure_sn": 0.3,
+   "hata": null,
+   "madde": 256,
+   "ad": "Semafor"
+  },
+  {
+   "id": "theregister",
+   "durum": 200,
+   "sure_sn": 1.0,
+   "hata": null,
+   "madde": 50,
+   "ad": "The Register"
+  },
+  {
+   "id": "404media",
+   "durum": 200,
+   "sure_sn": 0.3,
+   "hata": null,
+   "madde": 15,
+   "ad": "404 Media"
+  },
+  {
+   "id": "aiweekly",
+   "durum": 200,
+   "sure_sn": 0.2,
+   "hata": null,
+   "madde": 20,
+   "ad": "AI Weekly"
+  }
+ ],
+ "basarili_kaynak": 28,
+ "toplam_kaynak": 29,
+ "ham_madde": 3138,
+ "elenen": {
+  "tarih_disi": 2857,
+  "tarihsiz": 0,
+  "anahtar": 82,
+  "disla": 68,
+  "onceki_bulten": 0,
+  "gecersiz_url": 0,
+  "yinelenen_url": 4
+ },
+ "aday": 127,
+ "kume": 118,
+ "coklu_kapsam": 7
+}
